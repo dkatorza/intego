@@ -10,115 +10,155 @@
   <body>
     <header>
       <div class="logo-container">
-        <img src="./asstest/media/logo.svg" alt="intego-logo" />
+        <img
+          class="intego-logo"
+          src="./assets/media/logo.svg"
+          alt="intego-logo"
+        />
       </div>
       <div class="stars-container">
-        <img src="./asstest/media/stars.svg" alt="stars" />
-        <p class="slogan">We are rated 4.8 out of 5</p>
-      </div>
-    </header>
-    <main class="main-wrapper">
-      <div class="content">
-        <section>
-          <div class="headlines-container">
-            <h1>Intego Privacy Protection VPN</h1>
-            <h2>The last piece for your online privacy</h2>
-          </div>
-        </section>
-        <section>
-          <div class="advantages-container">
-            <ul>
-              <li>
-                <img src="./asstest/media/vsign.svg" alt="advantages" /> Total
-                Privacy and Anonymity for your data
-              </li>
-              <li>
-                <img src="./asstest/media/vsign.svg" alt="advantages" />Unblock
-                Streaming
-              </li>
-              <li>
-                <img src="./asstest/media/vsign.svg" alt="advantages" />Stay
-                Protected on Public Wi-Fi Networks
-              </li>
-              <li>
-                <img
-                  src="./asstest/media/vsign.svg"
-                  alt="advantages"
-                />Unlimited Bandwidth & Fast Download Speeds
-              </li>
-              <li>
-                <img src="./asstest/media/vsign.svg" alt="advantages" />Secure
-                VPN Protocols
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section>
-          <div class="price-container">
-            <p class="regular">
-              Regular <span class="currency"></span><span class="price"></span>
-            </p>
-            <p class="special">
-              Now only <span class="currency"></span><span class="price"></span>
-              <span class="year">/ year</span>
-            </p>
-            <p class="remark">Supports up to 10 devices</p>
-          </div>
-        </section>
-
-        <div class="form-container">
-          <form onsubmit="submitForm()">
-            <div class="inputs-wraper">
-              <div class="support-container">
-                <input
-                  type="checkbox"
-                  id="addsupport"
-                  name="add-support"
-                  onclick="onInputChange()"
-                />
-                <label for="add-support">
-                  Add support for another 10 devices</label
-                >
-              </div>
-              <div class="currency-container">
-                <label for="currency">Currency:</label>
-                <select
-                  name="currency"
-                  id="currency"
-                  onclick="onInputChange()"
-                ></select>
-              </div>
-            </div>
-            <div class="click-to-action">
-              <div class="button-wrapper">
-                <button type="submit">
-                  <img src="./asstest/media/avatar.svg" alt="intego-avatar" />
-                  Add Intego Privacy Protection
-                </button>
-                <p class="remark">No thanks, continue without upgrading</p>
-              </div>
-              <div class="compatible-wrapper">
-                <p>Compatible with</p>
-                <div class="logos-container">
-                  <img src="./asstest/media/applelogo.svg" alt="apple-logo" />
-                  <img
-                    src="./asstest/media/windowslogo.svg"
-                    alt="windows-logo"
-                  />
-                </div>
-              </div>
-            </div>
-          </form>
+        <div class="trustpilot">
+          <img src="./assets/media/trustpilot.svg" alt="intego trust pilot" />
+        </div>
+        <div class="stars">
+          <img src="./assets/media/stars.svg" alt="stars" />
+          <p class="slogan">We are rated 4.8 out of 5</p>
         </div>
       </div>
-      <div class="status"><p class="statusmsg"></p></div>
-      <div class="disclaimer">
-        <p>
-          By clicking you agree to our
-          <span> Terms of Use & Privacy Policy.</span> Introductory prices are
-          for initial term only. Recurring services will be automatically renew
-          at the regular rate unless changed or cancelled
-        </p>
+    </header>
+    <main class="layout">
+      <div>
+        <section class="main-wrapper">
+          <div class="content">
+            <section>
+              <div class="headlines-container">
+                <h1>Intego Privacy Protection VPN</h1>
+                <h2>The last piece for your online privacy</h2>
+              </div>
+            </section>
+            <section>
+              <div class="advantages-container">
+                <ul>
+                  <li>
+                    <img src="./assets/media/vsign.svg" alt="advantages" />
+                    Total Privacy and Anonymity for your data
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/media/vsign.svg"
+                      alt="advantages"
+                    />Unblock Streaming
+                  </li>
+                  <li>
+                    <img src="./assets/media/vsign.svg" alt="advantages" />Stay
+                    Protected on Public Wi-Fi Networks
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/media/vsign.svg"
+                      alt="advantages"
+                    />Unlimited Bandwidth & Fast Download Speeds
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/media/vsign.svg"
+                      alt="advantages"
+                    />Secure VPN Protocols
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <section>
+              <div class="price-container">
+                <p class="regular">
+                  Regular <span class="currency"></span
+                  ><span class="price"></span>
+                </p>
+                <p class="special">
+                  Now only <span class="currency"></span
+                  ><span class="price"></span>
+                  <span class="year">/ year</span>
+                </p>
+                <p class="remark">Supports up to 10 devices</p>
+              </div>
+            </section>
+
+            <div class="form-container">
+              <form onsubmit="submitForm()">
+                <div class="inputs-wraper">
+                  <div class="support-container">
+                    <input
+                      type="checkbox"
+                      id="addsupport"
+                      name="add-support"
+                      onclick="onInputChange()"
+                    />
+                    <label for="add-support">
+                      Add support for another 10 devices</label
+                    >
+                  </div>
+                  <div class="currency-container">
+                    <label for="currency">Currency:</label>
+                    <select
+                      name="currency"
+                      id="currency"
+                      onclick="onInputChange()"
+                    ></select>
+                  </div>
+                </div>
+                <div class="click-to-action">
+                  <div class="button-wrapper">
+                    <button type="submit">
+                      <img
+                        src="./assets/media/avatar.svg"
+                        alt="intego-avatar"
+                      />
+                      <p>Add Intego Privacy Protection</p>
+                    </button>
+                    <p class="remark">No thanks, continue without upgrading</p>
+                  </div>
+                  <div class="compatible-wrapper">
+                    <p>Compatible with</p>
+                    <div class="logos-container">
+                      <img
+                        src="./assets/media/applelogo.svg"
+                        alt="apple-logo"
+                      />
+                      <img
+                        src="./assets/media/windowslogo.svg"
+                        alt="windows-logo"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="status">
+                  <div class="status-container">
+                    <img src="./assets/media/xmark.svg" alt="close" />
+                    <p class="statusmsg">Upgrade Failed,finalizing order...</p>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="hero-wrapper">
+            <div class="mac">
+              <img src="./assets/media/mac.svg" alt="mac" />
+              <div class="macbook">
+                <img src="./assets/media/macbookair.svg" alt="macbook" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="bottom-wrapper">
+        <div class="disclaimer">
+          <p>
+            By clicking you agree to our
+            <span> Terms of Use & Privacy Policy.</span> Introductory prices are
+            for initial term only. Recurring services will be automatically
+            renew at the regular rate unless changed or cancelled
+          </p>
+        </div>
       </div>
     </main>
     <script type="module" src="main.js"></script>

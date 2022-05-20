@@ -1,0 +1,55 @@
+.price-container {
+  width: 458px;
+  height: 127px;
+  border: 2px dashed $clr2;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 17px;
+
+  @include for-tablet-layout {
+    width: 336px;
+    height: 133px;
+    padding-top: 17px;
+  }
+
+  .regular {
+    color: $clr2;
+    font-size: rem(27px);
+    font-weight: 500;
+
+    & > span {
+      text-decoration: line-through;
+    }
+
+    @include for-tablet-layout {
+      font-size: rem(23px);
+    }
+  }
+  .special {
+    font-size: rem(32px);
+    font-weight: 800;
+
+    & > .year {
+      font-size: rem(26px);
+      font-weight: 600;
+
+      @include for-tablet-layout {
+        font-size: rem(19px);
+      }
+    }
+
+    @include for-tablet-layout {
+      font-size: rem(29px);
+    }
+  }
+
+  .remark {
+    font-size: rem(16px);
+
+    @include for-tablet-layout {
+      font-size: rem(15px);
+    }
+  }
+}

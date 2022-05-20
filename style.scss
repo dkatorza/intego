@@ -1,10 +1,19 @@
 //Setup
-@import './asstest/styles/setup/functions';
-@import './asstest/styles/setup/variables';
-@import './asstest/styles/setup/typography';
+@import './assets/styles/setup/functions';
+@import './assets/styles/setup/variables';
+@import './assets/styles/setup/typography';
+@import './assets/styles/setup/mixins';
 
 //Basics
-@import './asstest/styles/basics/base';
+@import './assets/styles/basics/base';
+@import './assets/styles/basics/loader';
 
 //Pages
-@import './asstest/styles/pages/home';
+@import './assets/styles/pages/home/home';
+@import './assets/styles/pages/home/header';
+@import './assets/styles/pages/home/hero';
+@import './assets/styles/pages/home/headlines';
+@import './assets/styles/pages/home/advantages';
+@import './assets/styles/pages/home/price';
+@import './assets/styles/pages/home/form';
+@import './assets/styles/basics/layout';

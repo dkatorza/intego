@@ -6,19 +6,30 @@
   }
 }
 @mixin for-tablet-layout {
-  @media (min-width: $tablet-breakpoint) {
+  @media (max-width: $tablet-breakpoint) {
+    @content;
+  }
+}
+@mixin for-smallscreen-layout {
+  @media (max-width: $smallscreen-breakpoint) {
     @content;
   }
 }
 
 @mixin for-normal-layout {
-  @media (min-width: $normal-breakpoint) {
+  @media (max-width: $normal-breakpoint) {
     @content;
   }
 }
 
 @mixin for-wide-layout {
-  @media (min-width: $wide-breakpoint) {
+  @media (max-width: $wide-breakpoint) {
+    @content;
+  }
+}
+
+@mixin for-special-layout {
+  @media (max-width: $special-breakpoint) {
     @content;
   }
 }

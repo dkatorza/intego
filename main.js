@@ -18,7 +18,8 @@ const regularCurrency = document.querySelector('p.regular .currency');
 const regularPrice = document.querySelector('p.regular .price');
 const specialCurrency = document.querySelector('p.special .currency');
 const specialPrice = document.querySelector('p.special .price');
-const submitStatus = document.querySelector('p.statusmsg');
+const submitStatus = document.querySelector('div.status-container');
+const submitButton = document.querySelector('.button-wrapper button');
 submitStatus.style.display = 'none';
 
 function renderFormData() {
@@ -55,8 +56,10 @@ function onInputChange() {
 
 function submitForm() {
   event.preventDefault();
+  const loader = document.createElement('div');
+  loader.className = 'loader';
+  submitButton.replaceChildren(loader);
   setTimeout(() => {
-    submitStatus.textContent = 'Upgrade Failed,finalizing order...';
-    submitStatus.style.display = 'block';
+    submitStatus.style.display = 'flex';
   }, 4000);
 }

@@ -1,0 +1,22 @@
+.advantages-container {
+  width: 426;
+  height: 184px;
+  margin-bottom: 23px;
+
+  li {
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    font-size: rem(18px);
+
+    @include for-tablet-layout {
+      font-size: rem(15px);
+    }
+
+    img {
+      width: 26px;
+      height: 20px;
+      margin-right: 10px;
+    }
+  }
+}

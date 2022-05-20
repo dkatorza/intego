@@ -1,0 +1,27 @@
+.headlines-container {
+  h1 {
+    @include for-smallscreen-layout {
+      font-size: rem(40px);
+    }
+
+    @include for-tablet-layout {
+      font-size: rem(39px);
+    }
+  }
+  h2 {
+    margin: 10px 0 10px 0;
+    font-style: italic;
+
+    @include for-smallscreen-layout {
+      font-size: rem(30px);
+    }
+
+    @include for-tablet-layout {
+      font-size: rem(25px);
+    }
+
+    @include for-mobile-layout {
+      width: 20ch;
+    }
+  }
+}
