@@ -1,10 +1,14 @@
 import data from './data.json' assert { type: 'json' };
 
-window.onload = onInit;
-
 //Registering functions.
+window.onload = onInit;
+window.submitForm = submitForm;
+window.renderFieldsData = renderFieldsData;
+window.onInputChange = onInputChange;
+
 function onInit() {
   renderFormData();
+  renderFieldsData();
 }
 
 //Grabbing elements
@@ -28,4 +32,26 @@ function setSelectOptions() {
     option.value = curr;
     currency.appendChild(option);
   }
+}
+
+// Dynamic rendering based on checkbox input
+function renderFieldsData() {
+  const currValue = data[currency.value];
+  let typeOfPrice;
+  if (supportCheck.checked) typeOfPrice = currValue.supportPack;
+  else typeOfPrice = currValue.original;
+
+  //Updating fields
+  regularCurrency.textContent = currValue.currency.symbol;
+  regularPrice.textContent = typeOfPrice.regular.toFixed(2);
+  specialPrice.textContent = typeOfPrice.discount.toFixed(2);
+  specialCurrency.textContent = currValue.currency.symbol;
+}
+
+function onInputChange() {
+  renderFieldsData();
+}
+
+function submitForm() {
+  event.preventDefault();
 }
