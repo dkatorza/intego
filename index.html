@@ -8,7 +8,23 @@
     <title>Intego</title>
 </head>
 <body>
-    <p>Intego</p>
+    <div>
+        <p class="regular">Regular <span class="currency"></span><span class="price"></span></p>
+        <p class="special">Now only <span class="currency"></span><span class="price"></span></p>
+    </div>
+    <div>
+     <form>
+            <input type="checkbox" id="addsupport" name="add-support">
+            <label for="add-support"> Add support for another 10 devices</label>
+           
+            <select name="currency" id="currency">  </select>     
+            
+            <label for="currency">Currency:</label>
+
+            <button type="submit">Add Intego Privacy Protection</button>
+            <p class="statusmsg"></p>
+        </form>
+    </div>
     <script type="module" src="main.js"></script>
 </body>
 </html>
