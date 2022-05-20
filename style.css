@@ -1,15 +1,15 @@
 @font-face {
-  font-family: OpenSans-Regular;
+  font-family: 'OpenSans-Regular';
   src: url(../../fonts/OpenSans-Regular.ttf);
 }
 
 @font-face {
-  font-family: OpenSans-Bold;
+  font-family: 'OpenSans-Bold';
   src: url(../../fonts/OpenSans-Bold.ttf);
 }
 
 @font-face {
-  font-family: OpenSans-ExtraBold;
+  font-family: 'OpenSans-ExtraBold';
   src: url(../../fonts/OpenSans-ExtraBold.ttf);
 }
 
@@ -21,7 +21,7 @@
 }
 
 html {
-  font-family: OpenSans-Regular, sans-serif;
+  font-family: 'Open Sans';
   color: black;
 }
 
