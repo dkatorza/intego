@@ -1,0 +1,22 @@
+{
+  "usd": {
+    "original": { "regular": 39.99, "discount": 19.99 },
+    "supportPack": { "regular": 12.99, "discount": 7.59 },
+    "currency": { "symbol": "$", "code": "USD" }
+  },
+  "eur": {
+    "original": { "regular": 29.99, "discount": 9.99 },
+    "supportPack": { "regular": 9.99, "discount": 6.43 },
+    "currency": { "symbol": "€", "code": "EUR" }
+  },
+  "yen": {
+    "original": { "regular": 159, "discount": 59.1 },
+    "supportPack": { "regular": 59, "discount": 26.23 },
+    "currency": { "symbol": "¥", "code": "YEN" }
+  },
+  "nis": {
+    "original": { "regular": 130.9, "discount": 58.9 },
+    "supportPack": { "regular": 27.9, "discount": 14.9 },
+    "currency": { "symbol": "₪", "code": "nis" }
+  }
+}
