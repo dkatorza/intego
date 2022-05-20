@@ -19,6 +19,7 @@ const regularPrice = document.querySelector('p.regular .price');
 const specialCurrency = document.querySelector('p.special .currency');
 const specialPrice = document.querySelector('p.special .price');
 const submitStatus = document.querySelector('p.statusmsg');
+submitStatus.style.display = 'none';
 
 function renderFormData() {
   setSelectOptions();
@@ -54,4 +55,8 @@ function onInputChange() {
 
 function submitForm() {
   event.preventDefault();
+  setTimeout(() => {
+    submitStatus.textContent = 'Upgrade Failed,finalizing order...';
+    submitStatus.style.display = 'block';
+  }, 4000);
 }

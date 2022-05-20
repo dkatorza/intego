@@ -1,3 +1,160 @@
-p {
-  color: red;
+.main-wrapper {
+  width: 684px;
+  height: 636px;
+}
+
+.headlines-container {
+  h2 {
+    margin-top: 17px;
+    font-style: italic;
+  }
+}
+
+.advantages-container {
+  width: 426;
+  height: 184px;
+  margin-bottom: 23px;
+  li {
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    font-size: rem(18px);
+
+    img {
+      width: 26px;
+      height: 20px;
+      margin-right: 10px;
+    }
+  }
+}
+
+.price-container {
+  width: 458px;
+  height: 127px;
+  border: 2px dashed $clr2;
+  padding: 21px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 17px;
+
+  .regular {
+    color: $clr2;
+    font-size: rem(27px);
+    font-weight: 500;
+
+    & > span {
+      text-decoration: line-through;
+    }
+  }
+  .special {
+    font-size: rem(32px);
+    font-weight: 800;
+
+    & > .year {
+      font-size: rem(26px);
+      font-weight: 600;
+    }
+  }
+
+  .remark {
+    font-size: rem(16px);
+  }
+}
+
+.form-container {
+  .inputs-wraper {
+    width: 455px;
+    height: 20px;
+    font-size: rem(14px);
+    display: flex;
+    justify-content: space-between;
+
+    .support-container {
+      display: flex;
+      align-items: center;
+      input[type='checkbox'] {
+        margin-right: 5px;
+      }
+    }
+
+    .currency-container {
+      select {
+        margin-left: 5px;
+        border-radius: 4px;
+        width: 64px;
+        height: 17px;
+        font-size: rem(12px);
+        color: $clr3;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .click-to-action {
+    display: flex;
+
+    .button-wrapper {
+      display: flex;
+      flex-direction: column;
+      margin-top: 18px;
+      width: 416px;
+
+      button {
+        &:hover {
+          background-color: $clr5;
+          transition: all 0.1s ease-in;
+        }
+      }
+      & > .remark {
+        font-size: rem(17px);
+        font-weight: 500;
+        text-decoration: underline;
+        text-align: center;
+        margin-top: 12px;
+
+        &:hover {
+          color: $clr6;
+          transition: all 0.1s ease-in;
+        }
+      }
+    }
+
+    .compatible-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 80px;
+      height: 53px;
+      font-size: rem(10px);
+      font-weight: 500;
+      margin-left: 24px;
+      margin-top: 22px;
+
+      & > p {
+        margin-bottom: 10px;
+      }
+
+      .logos-container {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+.status {
+  height: 70px;
+}
+
+.disclaimer {
+  font-size: rem(14px);
+  font-weight: 400;
+  width: 100ch;
+  & > p {
+    span {
+      text-decoration: underline;
+    }
+  }
 }

@@ -1,30 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Intego</title>
-</head>
-<body>
-    <div>
-        <p class="regular">Regular <span class="currency"></span><span class="price"></span></p>
-        <p class="special">Now only <span class="currency"></span><span class="price"></span></p>
-    </div>
-    <div>
-     <form onsubmit="submitForm()">
-            <input type="checkbox" id="addsupport" name="add-support" onclick="onInputChange()">
-            <label for="add-support"> Add support for another 10 devices</label>
-           
-            <select name="currency" id="currency" onclick="onInputChange()">  </select>     
-            
-            <label for="currency">Currency:</label>
-            
-            <button type="submit">Add Intego Privacy Protection</button>
-            <p class="statusmsg"></p>
-        </form>
-    </div>
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img src="./asstest/media/logo.svg" alt="intego-logo" />
+      </div>
+      <div class="stars-container">
+        <img src="./asstest/media/stars.svg" alt="stars" />
+        <p class="slogan">We are rated 4.8 out of 5</p>
+      </div>
+    </header>
+    <main class="main-wrapper">
+      <div class="content">
+        <section>
+          <div class="headlines-container">
+            <h1>Intego Privacy Protection VPN</h1>
+            <h2>The last piece for your online privacy</h2>
+          </div>
+        </section>
+        <section>
+          <div class="advantages-container">
+            <ul>
+              <li>
+                <img src="./asstest/media/vsign.svg" alt="advantages" /> Total
+                Privacy and Anonymity for your data
+              </li>
+              <li>
+                <img src="./asstest/media/vsign.svg" alt="advantages" />Unblock
+                Streaming
+              </li>
+              <li>
+                <img src="./asstest/media/vsign.svg" alt="advantages" />Stay
+                Protected on Public Wi-Fi Networks
+              </li>
+              <li>
+                <img
+                  src="./asstest/media/vsign.svg"
+                  alt="advantages"
+                />Unlimited Bandwidth & Fast Download Speeds
+              </li>
+              <li>
+                <img src="./asstest/media/vsign.svg" alt="advantages" />Secure
+                VPN Protocols
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div class="price-container">
+            <p class="regular">
+              Regular <span class="currency"></span><span class="price"></span>
+            </p>
+            <p class="special">
+              Now only <span class="currency"></span><span class="price"></span>
+              <span class="year">/ year</span>
+            </p>
+            <p class="remark">Supports up to 10 devices</p>
+          </div>
+        </section>
+
+        <div class="form-container">
+          <form onsubmit="submitForm()">
+            <div class="inputs-wraper">
+              <div class="support-container">
+                <input
+                  type="checkbox"
+                  id="addsupport"
+                  name="add-support"
+                  onclick="onInputChange()"
+                />
+                <label for="add-support">
+                  Add support for another 10 devices</label
+                >
+              </div>
+              <div class="currency-container">
+                <label for="currency">Currency:</label>
+                <select
+                  name="currency"
+                  id="currency"
+                  onclick="onInputChange()"
+                ></select>
+              </div>
+            </div>
+            <div class="click-to-action">
+              <div class="button-wrapper">
+                <button type="submit">
+                  <img src="./asstest/media/avatar.svg" alt="intego-avatar" />
+                  Add Intego Privacy Protection
+                </button>
+                <p class="remark">No thanks, continue without upgrading</p>
+              </div>
+              <div class="compatible-wrapper">
+                <p>Compatible with</p>
+                <div class="logos-container">
+                  <img src="./asstest/media/applelogo.svg" alt="apple-logo" />
+                  <img
+                    src="./asstest/media/windowslogo.svg"
+                    alt="windows-logo"
+                  />
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="status"><p class="statusmsg"></p></div>
+      <div class="disclaimer">
+        <p>
+          By clicking you agree to our
+          <span> Terms of Use & Privacy Policy.</span> Introductory prices are
+          for initial term only. Recurring services will be automatically renew
+          at the regular rate unless changed or cancelled
+        </p>
+      </div>
+    </main>
     <script type="module" src="main.js"></script>
-</body>
+  </body>
 </html>
