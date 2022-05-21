@@ -43,12 +43,17 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 336px;
     }
+
     .button-wrapper {
       display: flex;
       flex-direction: column;
       margin-top: 18px;
+
+      @include for-tablet-layout {
+        width: 336px;
+        align-items: center;
+      }
 
       button {
         width: 416px;
@@ -62,6 +67,10 @@
         @include for-tablet-layout {
           width: 336px;
         }
+
+        @include for-xs-layout {
+          width: 320px;
+        }
       }
       & > .remark {
         font-size: rem(17px);
@@ -74,6 +83,14 @@
           color: $clr6;
           transition: all 0.1s ease-in;
           cursor: pointer;
+        }
+
+        @include for-xs-layout {
+          font-size: rem(14px);
+        }
+        @include for-tablet-layout {
+          font-size: rem(14px);
+          width: 320px;
         }
       }
     }

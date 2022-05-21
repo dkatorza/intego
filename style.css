@@ -19,8 +19,8 @@
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url(../../fonts/Montserrat-Regular.ttf.ttf);
+  font-family: 'Montserrat', sans-serif;
+  src: url(../../fonts/Montserrat-Regular.ttf);
 }
 
 /* Breakpoint mixins */
@@ -87,6 +87,12 @@ button {
 
 button > img {
   margin-right: 5px;
+}
+
+@media (max-width: 395px) {
+  button {
+    font-size: 0.9375rem;
+  }
 }
 
 .loader {
@@ -210,7 +216,7 @@ button > img {
   }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 998px) {
   .main-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -270,6 +276,12 @@ button > img {
   width: 100ch;
 }
 
+@media (max-width: 475px) {
+  .bottom-wrapper .disclaimer {
+    font-size: 0.8125rem;
+  }
+}
+
 .bottom-wrapper .disclaimer > p span {
   text-decoration: underline;
 }
@@ -304,7 +316,7 @@ header .logo-container .intego-logo {
   width: 128px;
 }
 
-@media (max-width: 970px) {
+@media (max-width: 998px) {
   header .logo-container .intego-logo {
     width: 106px;
     height: 30px;
@@ -325,7 +337,7 @@ header .stars-container {
           justify-content: flex-end;
 }
 
-@media (max-width: 970px) {
+@media (max-width: 998px) {
   header .stars-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -346,7 +358,7 @@ header .stars-container .trustpilot {
   margin-right: 10px;
 }
 
-@media (max-width: 970px) {
+@media (max-width: 998px) {
   header .stars-container .trustpilot {
     width: 122px;
     height: 30px;
@@ -354,14 +366,14 @@ header .stars-container .trustpilot {
   }
 }
 
-@media (max-width: 970px) {
+@media (max-width: 998px) {
   header .stars-container .trustpilot img {
     width: 122px;
     height: 30px;
   }
 }
 
-@media (max-width: 970px) {
+@media (max-width: 998px) {
   header .stars-container .stars {
     width: 100%;
   }
@@ -373,7 +385,7 @@ header .stars-container .stars .slogan {
   font-family: 'Montserrat', sans-serif;
 }
 
-@media (max-width: 970px) {
+@media (max-width: 998px) {
   header .stars-container .stars .slogan {
     display: none;
   }
@@ -384,7 +396,7 @@ header .stars-container .stars img {
   height: 27.16px;
 }
 
-@media (max-width: 970px) {
+@media (max-width: 998px) {
   header .stars-container .stars img {
     width: 124px;
     height: 23.16px;
@@ -392,9 +404,6 @@ header .stars-container .stars img {
 }
 
 .hero-wrapper {
-  -webkit-box-flex: 50%;
-      -ms-flex: 50%;
-          flex: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -412,7 +421,6 @@ header .stars-container .stars img {
 
 @media (max-width: 1300px) {
   .hero-wrapper {
-    height: 100%;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -441,8 +449,6 @@ header .stars-container .stars img {
 .hero-wrapper .mac {
   position: relative;
   z-index: 10;
-  width: 508px;
-  height: 100%;
 }
 
 @media (max-width: 475px) {
@@ -451,9 +457,10 @@ header .stars-container .stars img {
   }
 }
 
-@media (max-width: 720px) {
-  .hero-wrapper .mac {
-    margin-left: 87px;
+@media (max-width: 1300px) {
+  .hero-wrapper .mac img {
+    width: 340px;
+    height: 100%;
   }
 }
 
@@ -471,10 +478,27 @@ header .stars-container .stars img {
   z-index: 20;
 }
 
+@media (max-width: 1300px) {
+  .hero-wrapper .mac .macbook {
+    width: 300px;
+    right: 132px;
+    top: 96px;
+  }
+}
+
 @media (max-width: 720px) {
   .hero-wrapper .mac .macbook {
-    right: 338px;
+    right: 59px;
     top: 81px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .hero-wrapper .mac .macbook img {
+    width: 300px;
+    height: 100%;
+    right: 300px;
+    top: 96px;
   }
 }
 
@@ -487,7 +511,7 @@ header .stars-container .stars img {
   }
 }
 
-@media (max-width: 970px) {
+@media (max-width: 998px) {
   .headlines-container h1 {
     font-size: 2.5rem;
   }
@@ -504,7 +528,7 @@ header .stars-container .stars img {
   font-style: italic;
 }
 
-@media (max-width: 970px) {
+@media (max-width: 998px) {
   .headlines-container h2 {
     font-size: 1.875rem;
   }
@@ -545,6 +569,12 @@ header .stars-container .stars img {
   }
 }
 
+@media (max-width: 395px) {
+  .advantages-container li {
+    font-size: 0.75rem;
+  }
+}
+
 .advantages-container li img {
   width: 26px;
   height: 20px;
@@ -572,6 +602,14 @@ header .stars-container .stars img {
 @media (max-width: 720px) {
   .price-container {
     width: 336px;
+    height: 133px;
+    padding-top: 17px;
+  }
+}
+
+@media (max-width: 395px) {
+  .price-container {
+    width: 320px;
     height: 133px;
     padding-top: 17px;
   }
@@ -612,6 +650,12 @@ header .stars-container .stars img {
 @media (max-width: 720px) {
   .price-container .special {
     font-size: 1.8125rem;
+  }
+}
+
+@media (max-width: 395px) {
+  .price-container .special {
+    font-size: 1.6875rem;
   }
 }
 
@@ -696,7 +740,6 @@ header .stars-container .stars img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 336px;
   }
 }
 
@@ -709,6 +752,15 @@ header .stars-container .stars img {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 18px;
+}
+
+@media (max-width: 720px) {
+  .form-container .click-to-action .button-wrapper {
+    width: 336px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .form-container .click-to-action .button-wrapper button {
@@ -728,6 +780,12 @@ header .stars-container .stars img {
   }
 }
 
+@media (max-width: 395px) {
+  .form-container .click-to-action .button-wrapper button {
+    width: 320px;
+  }
+}
+
 .form-container .click-to-action .button-wrapper > .remark {
   font-size: 1.0625rem;
   font-weight: 500;
@@ -741,6 +799,19 @@ header .stars-container .stars img {
   -webkit-transition: all 0.1s ease-in;
   transition: all 0.1s ease-in;
   cursor: pointer;
+}
+
+@media (max-width: 395px) {
+  .form-container .click-to-action .button-wrapper > .remark {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 720px) {
+  .form-container .click-to-action .button-wrapper > .remark {
+    font-size: 0.875rem;
+    width: 320px;
+  }
 }
 
 .form-container .click-to-action .compatible-wrapper {
