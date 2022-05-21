@@ -1,0 +1,27 @@
+.status {
+  height: 59px;
+  margin-top: 13px;
+
+  .status-container {
+    height: 46px;
+    width: 283px;
+    border: 1px solid $clr-red;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & > img {
+      width: 24px;
+      height: 24px;
+      margin-right: 5px;
+    }
+
+    & > p {
+      font-size: rem(15px);
+      font-weight: 700;
+      font-family: 'Source Sans Pro', sans-serif;
+      color: $clr-redish;
+    }
+  }
+}

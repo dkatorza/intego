@@ -1,7 +1,7 @@
 .price-container {
   width: 458px;
   height: 127px;
-  border: 2px dashed $clr2;
+  border: 2px dashed $clr-redish;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -21,7 +21,7 @@
   }
 
   .regular {
-    color: $clr2;
+    color: $clr-redish;
     font-size: rem(27px);
     font-weight: 500;
 
