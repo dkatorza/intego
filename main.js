@@ -1,14 +1,14 @@
-import data from './data.json' assert { type: 'json' };
-
 //Registering functions.
 window.onload = onInit;
 window.submitForm = submitForm;
-window.renderFieldsData = renderFieldsData;
+window.renderFieldsprices = renderFieldsprices;
 window.onInputChange = onInputChange;
 
-function onInit() {
-  renderFormData();
-  renderFieldsData();
+let prices;
+async function onInit() {
+  prices = await getPrices();
+  await getPrices();
+  renderFormprices();
 }
 
 //Grabbing elements
@@ -22,23 +22,32 @@ const submitStatus = document.querySelector('div.status-container');
 const submitButton = document.querySelector('.button-wrapper button');
 submitStatus.style.display = 'none';
 
-function renderFormData() {
+async function getPrices() {
+  try {
+    const response = await fetch('./data.json');
+    prices = await response.json();
+  } catch (error) {
+    console.log('Could not fetch prices', error);
+  }
+}
+
+function renderFormprices() {
   setSelectOptions();
 }
 
 // Dynamic options so you can updated values in one place dynamicly.
-function setSelectOptions() {
-  for (const curr in data) {
+async function setSelectOptions() {
+  for (const curr in prices) {
     const option = document.createElement('option');
-    option.textContent = data[curr].currency.code;
+    option.textContent = prices[curr].currency.code.toUpperCase();
     option.value = curr;
     currency.appendChild(option);
   }
 }
 
 // Dynamic rendering based on checkbox input
-function renderFieldsData() {
-  const currValue = data[currency.value];
+function renderFieldsprices() {
+  const currValue = prices[currency.value];
   let typeOfPrice;
   if (supportCheck.checked) typeOfPrice = currValue.supportPack;
   else typeOfPrice = currValue.original;
@@ -51,7 +60,7 @@ function renderFieldsData() {
 }
 
 function onInputChange() {
-  renderFieldsData();
+  renderFieldsprices();
 }
 
 function submitForm() {

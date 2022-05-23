@@ -18,7 +18,7 @@ body {
 
 html {
   font-family: 'Open Sans';
-  color: $clr1;
+  color: $clr-white;
 }
 
 h1 {
@@ -40,9 +40,9 @@ li {
 button {
   cursor: pointer;
 
-  background-color: $clr4;
+  background-color: $clr-lightgreen;
   border-radius: 5px;
-  color: $clr1;
+  color: $clr-white;
   font-size: rem(21px);
   font-weight: 600;
   display: flex;

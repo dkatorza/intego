@@ -1,11 +1,11 @@
 // Colors
-$clr1: hsl(0, 0%, 100%);
-$clr2: hsl(0, 86%, 65%);
-$clr3: hsl(0, 0%, 75%);
-$clr4: hsl(146, 48%, 49%);
-$clr5: hsl(145, 76%, 34%);
-$clr6: hsl(107, 100%, 92%);
-$clr7: hsl(356, 71%, 53%);
+$clr-white: hsl(0, 0%, 100%);
+$clr-redish: hsl(0, 86%, 65%);
+$clr-grey: hsl(0, 0%, 75%);
+$clr-lightgreen: hsl(146, 48%, 49%);
+$clr-green: hsl(145, 76%, 34%);
+$clr-palegreen: hsl(107, 100%, 92%);
+$clr-red: hsl(356, 71%, 53%);
 
 //Background color
 $bgrclr: hsl(219, 83%, 16%);
@@ -14,7 +14,6 @@ $bgrclr: hsl(219, 83%, 16%);
 $xs-breakpoint: 395px;
 $mobile-breakpoint: 475px;
 $tablet-breakpoint: 720px;
-$special-breakpoint: 941px;
 $smallscreen-breakpoint: 998px;
 $normal-breakpoint: 1300px;
 $wide-breakpoint: 1400px;

@@ -1,5 +1,8 @@
 .headlines-container {
   h1 {
+    @include for-normal-layout {
+      width: 14ch;
+    }
     @include for-smallscreen-layout {
       font-size: rem(40px);
     }
@@ -12,16 +15,15 @@
     margin: 10px 0 10px 0;
     font-style: italic;
 
+    @include for-normal-layout {
+      width: 20ch;
+    }
     @include for-smallscreen-layout {
       font-size: rem(30px);
     }
 
     @include for-tablet-layout {
       font-size: rem(25px);
-    }
-
-    @include for-mobile-layout {
-      width: 20ch;
     }
   }
 }

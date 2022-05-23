@@ -33,12 +33,6 @@
   }
 }
 
-@mixin for-special-layout {
-  @media (max-width: $special-breakpoint) {
-    @content;
-  }
-}
-
 // Mixin for removing hover efects on iphone screen
 @mixin hover-supported {
   @media not all and (pointer: coarse) {
