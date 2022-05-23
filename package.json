@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/dkatorza/intego/issues"
   },
-  "homepage": "https://github.com/dkatorza/intego#readme"
+  "homepage": "https://github.com/dkatorza/intego#readme",
+  "devDependencies": {
+    "sass": "^1.52.1"
+  }
 }
