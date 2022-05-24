@@ -1,14 +1,19 @@
 // Colors
 $clr-white: hsl(0, 0%, 100%);
 $clr-redish: hsl(0, 86%, 65%);
-$clr-grey: hsl(0, 0%, 75%);
+$clr-grey: hsl(0, 0%, 42%);
 $clr-lightgreen: hsl(146, 48%, 49%);
 $clr-green: hsl(145, 76%, 34%);
 $clr-palegreen: hsl(107, 100%, 92%);
+$clr-teal: hsl(162, 73%, 46%);
+$clr-lightteal: hsla(162, 73%, 46%, 0.874);
 $clr-red: hsl(356, 71%, 53%);
+$clr-yellowish: hsl(41, 100%, 63%);
+$clr-purpleish: hsl(257, 94%, 75%);
+$clr-blacktext: hsl(260, 13%, 9%);
 
 //Background color
-$bgrclr: hsl(219, 83%, 16%);
+$bgrclr: hsl(0, 0%, 100%);
 
 // Breakpoints
 $xs-breakpoint: 395px;

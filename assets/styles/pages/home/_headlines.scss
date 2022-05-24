@@ -1,29 +1,45 @@
 .headlines-container {
   h1 {
-    @include for-normal-layout {
-      width: 14ch;
-    }
-    @include for-smallscreen-layout {
-      font-size: rem(40px);
-    }
+    line-height: 1.04;
+    font-weight: 800;
 
-    @include for-tablet-layout {
-      font-size: rem(39px);
+    span::before {
+      background-color: #ece5ff;
+      content: '';
+      position: absolute;
+      top: -20px;
+      left: -15px;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+    span {
+      display: inline-block;
+      position: relative;
+      color: #fff;
+      background-color: #5d36a9;
+      padding: 15px 10px 2px;
     }
   }
   h2 {
     margin: 10px 0 10px 0;
     font-style: italic;
+    line-height: 1.04;
 
-    @include for-normal-layout {
-      width: 20ch;
-    }
-    @include for-smallscreen-layout {
-      font-size: rem(30px);
+    span {
+      position: relative;
     }
 
-    @include for-tablet-layout {
-      font-size: rem(25px);
+    span::after {
+      transition: 0.3s ease-in;
+      content: '';
+      position: absolute;
+      bottom: 13px;
+      right: -5px;
+      width: 199px;
+      height: 21px;
+      background-color: #ece5ff;
+      z-index: -1;
     }
   }
 }

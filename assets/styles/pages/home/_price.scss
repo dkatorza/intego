@@ -1,65 +1,84 @@
+.price-container::before {
+  background-color: #ff6465;
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: -18px;
+  width: 25%;
+  height: 20%;
+  z-index: 1;
+}
+
 .price-container {
-  width: 458px;
-  height: 127px;
-  border: 2px dashed $clr-redish;
+  width: 336px;
+  height: 133px;
+  border: 2px solid #bdaedc;
+  background-color: $bgrclr;
   padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 17px;
+  margin: 30px 0 17px 17px;
+  position: relative;
 
-  @include for-tablet-layout {
-    width: 336px;
-    height: 133px;
-    padding-top: 17px;
-  }
-
-  @include for-xs-layout {
-    width: 320px;
-    height: 133px;
-    padding-top: 17px;
+  .regular::before {
+    background-color: #ff6465;
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: -57px;
+    width: 25%;
+    height: 50%;
+    z-index: 1;
+    transform: rotate(90deg);
   }
 
   .regular {
-    color: $clr-redish;
-    font-size: rem(27px);
+    color: $clr-blacktext;
+    font-size: rem(23px);
     font-weight: 500;
+    position: relative;
 
     & > span {
       text-decoration: line-through;
-    }
-
-    @include for-tablet-layout {
-      font-size: rem(23px);
+      color: $clr-redish;
     }
   }
+
+  .special::before {
+    background-color: #ffc444;
+    content: '';
+    position: absolute;
+    top: 94px;
+    left: 299px;
+    width: 25%;
+    height: 20%;
+    z-index: 1;
+    transform: rotate(90deg);
+  }
+
   .special {
-    font-size: rem(32px);
+    font-size: rem(27px);
     font-weight: 800;
 
     & > .year {
-      font-size: rem(26px);
+      font-size: rem(23px);
       font-weight: 600;
-
-      @include for-tablet-layout {
-        font-size: rem(19px);
-      }
     }
+  }
 
-    @include for-tablet-layout {
-      font-size: rem(29px);
-    }
-
-    @include for-xs-layout {
-      font-size: rem(27px);
-    }
+  .remark::before {
+    background-color: #ffc444;
+    content: '';
+    position: absolute;
+    top: 123px;
+    left: 269px;
+    width: 25%;
+    height: 20%;
+    z-index: 1;
   }
 
   .remark {
     font-size: rem(16px);
-
-    @include for-tablet-layout {
-      font-size: rem(15px);
-    }
   }
 }

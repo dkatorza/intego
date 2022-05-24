@@ -17,18 +17,15 @@ body {
 }
 
 html {
-  font-family: 'Open Sans';
-  color: $clr-white;
+  font-family: 'Baloo Tamma 2', cursive;
+  color: $clr-blacktext;
 }
-
 h1 {
-  font-family: 'Open Sans';
-  font-weight: 800;
-  font-size: rem(44px);
+  font-weight: 500;
+  font-size: rem(50px);
 }
 
 h2 {
-  font-family: 'Open Sans';
   font-weight: 600;
   font-size: rem(35px);
 }
@@ -39,8 +36,7 @@ li {
 
 button {
   cursor: pointer;
-
-  background-color: $clr-lightgreen;
+  background-color: $clr-teal;
   border-radius: 5px;
   color: $clr-white;
   font-size: rem(21px);
@@ -49,6 +45,7 @@ button {
   justify-content: center;
   align-items: center;
   border: none;
+  font-family: 'Baloo Tamma 2', cursive;
 
   & > img {
     margin-right: 5px;
