@@ -4,6 +4,8 @@
 
 **_Demo link - https://intego.netlify.app/ _**
 
+**_Demo link - https://intego2.netlify.app/ _** - with kape website design. (branch: "with-npm")
+
 **360** ![360](https://user-images.githubusercontent.com/76620273/169681097-e53cd545-fe8f-4708-9db7-9f322515022b.PNG)
 **mobile** ![mobile](https://user-images.githubusercontent.com/76620273/169681099-2d9e6ea8-bde8-4003-8cf1-837b07355bcb.PNG)
 
